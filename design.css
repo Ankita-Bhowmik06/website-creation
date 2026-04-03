@@ -5,7 +5,9 @@ body{
     background: linear-gradient(45deg, rgb(31, 30, 30), rgb(14, 13, 13));
 }
 
-
+*{
+    transition: 0.2s;
+}
 header{
     background:black;
     border-radius:20px;
@@ -27,6 +29,9 @@ header{
 .menu a{
     color:whitesmoke;
     text-decoration:none;
+}
+.menu a:hover{
+    color: lightgreen;
 }
 
 
@@ -81,6 +86,10 @@ header{
     color:white;
     font-size:13px;
 }
+.type:hover{
+    background: gray;
+    cursor: pointer;
+}
 
 #in{ background:linear-gradient(45deg,#09867c,#38ef7d); }
 #fast{ background:linear-gradient(45deg,#09867c,#38ef7d);}
@@ -120,7 +129,7 @@ header{
 }
 
 .show{
-    height:80px;
+    height:200px;
     min-width:160px;
     padding:0 10px;
     border-radius:12px;
@@ -137,7 +146,7 @@ header{
 }
 
 .card{
-    height:70px;
+    height:150px;
     min-width:120px;
     padding:0 10px;
     border-radius:12px;
@@ -149,7 +158,11 @@ header{
     font-size:13px;
     background:rgb(39, 39, 39);
 }
-
+.show:hover,
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
 #biriyani{ background:url("biriyani.jpg") center/cover; }
 #pizza{ background:url("pizza.jpg") center/cover; }
@@ -200,4 +213,10 @@ footer{
     gap:10px;         
     flex-wrap:wrap;
     font-size:13px;
+}
+#account:hover{
+    background: gray;
+}
+#offer div:hover{
+    color: lightgreen;
 }
